@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  Build Docker Image and Push to GCR:
+  Build-Docker-Image-and-Push-to-GCR:
 
     runs-on: ubuntu-latest
     env:
