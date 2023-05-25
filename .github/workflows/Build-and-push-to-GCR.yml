@@ -38,7 +38,7 @@ jobs:
       name: 'auth to cgloud'
       uses: 'google-github-actions/auth@v0.4.1'
       with:
-        credentials_json: ${{ secrets.GCLOUD_AUTH }}
+        credentials_json: ${{ env.GCLOUD_AUTH }}
 
     - 
       name: Build and publish image to GCR
