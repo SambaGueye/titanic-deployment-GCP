@@ -47,4 +47,4 @@ jobs:
         project_id: ${{ env.PROJECT_ID }}
         dockerfile: ./Dockerfile
         image: gcr.io/${{ secrets.PROJECT_ID }}/survivedtitanic
-        service_account_key: ${{ env.GCLOUD_AUTH }}
+        service_account_key: ${{ secrets.GCLOUD_AUTH }}
