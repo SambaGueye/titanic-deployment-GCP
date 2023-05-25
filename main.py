@@ -35,6 +35,6 @@ if __name__=='__main__':
     
     res = query_load(bigquery_client, query, DESTINATION)
     if(res):
-        print('Job  exécuté avec succès')
+        print('Job  exécuté avec succèss')
     else:
         print('Erreur lors du lancement du Job bigquery')
