@@ -32,3 +32,13 @@ jobs:
     -
       name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
+
+
+    - 
+      name: Build and publish image to GCR
+      uses: carbonchain/action-container-registry@v1.1
+      with:
+        project_id: ${{ secrets.PROJECT_ID }}
+        dockerfile: ./Dockerfile
+        image: gcr.io/${{ secrets.PROJECT_ID }}/survivedtitanic
+        service_account_key: ${{ secrets.GCLOUD_AUTH }}
